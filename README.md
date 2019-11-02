@@ -1,8 +1,17 @@
 # AppleCardStatementParser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/apple_card_statement_parser`. To experiment with that code, run `bin/console` for an interactive prompt.
+⚠️ This library is a work-in-progress!
 
-TODO: Delete this and the text above, and describe your gem
+Scrape, parse, and convert Apple Card PDF statements into machine-readable formats.
+
+### TODO
+
+- [ ] JSON output
+- [ ] CLI
+- [ ] Ensure returns are handled correctly
+- [ ] Handle daily cash adjustments
+- [ ] Handle non-US currencies
+- [ ] Validation of total payments and transactions?
 
 ## Installation
 
@@ -13,16 +22,49 @@ gem 'apple_card_statement_parser'
 ```
 
 And then execute:
-
-    $ bundle
+```sh
+$ bundle
+```
 
 Or install it yourself as:
-
-    $ gem install apple_card_statement_parser
+```sh
+$ gem install apple_card_statement_parser
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Create an instance of `Statement` and `read!`:
+```ruby
+@statement = AppleCardStatementParser::Statement::V1.new("tmp/Apple Card Statement - August 2024.pdf")
+@statement.read!
+```
+
+Then access properties of interest for the statement:
+```ruby
+puts @statement.period
+#+>
+```
+
+Or output as JSON for import into your preferred finance software:
+```ruby
+@statement.as_json
+#=> {...}
+@statement.write_json!("tmp/apple_card_statement.json")
+#=> true
+```
+
+```json
+{
+    # JSON formatted example here
+}
+```
+
+#### CLI
+
+You can also use the binary to convert PDFs directly to JSON:
+```sh
+bin/apple_card_statement_to_json "tmp/Apple Card Statement - August 2024.pdf"
+```
 
 ## Development
 
@@ -32,7 +74,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/apple_card_statement_parser. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tyetrask/apple_card_statement_parser. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
