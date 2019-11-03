@@ -4,7 +4,7 @@ module AppleCardStatementParser
       @currency_type = "$" # TODO
       if raw_amount
         @is_negative = raw_amount.start_with?("-")
-        @pennies = raw_amount.split("$")[1].gsub(".", "").to_i
+        @pennies = raw_amount.split(@currency_type)[1].gsub(".", "").to_i
       elsif raw_pennies
         @pennies = raw_pennies.abs
         @is_negative = raw_pennies < 0

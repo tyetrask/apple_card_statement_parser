@@ -13,12 +13,19 @@ module AppleCardStatementParser
     VERSION_1 = "1".freeze
     VALID_VERSIONS = [VERSION_1].freeze
 
-    attr_reader :file_hash, :filename, :payments, :period, :transactions, :return_transactions
+    attr_reader :file_hash,
+                :filename,
+                :payments,
+                :period,
+                :transactions,
+                :return_transactions
 
     def initialize(pdf_filepath, statement_version = VERSION_AUTODETECT)
       @pdf_filepath = pdf_filepath
       @statement_version = VERSION_1
-      raise "Invalid statement version: #{@statement_version}" unless VALID_VERSIONS.include?(@statement_version)
+      if !VALID_VERSIONS.include?(@statement_version)
+        raise "Invalid statement version: #{@statement_version}"
+      end
       raise "File does not exist! #{@pdf_filepath}" unless File.exist?(@pdf_filepath)
       @filename = File.basename(@pdf_filepath, ".*")
       @file_hash = Digest::MD5.hexdigest(File.read(@pdf_filepath))
@@ -62,7 +69,7 @@ module AppleCardStatementParser
           next
         end
       end
-      true
+      self
     end
 
     def total_payments
@@ -71,15 +78,23 @@ module AppleCardStatementParser
     end
 
     def total_charges_credits_and_returns
-      transactions_amount = @transactions.collect { |transaction| transaction.amount.pennies }.sum
-      return_transactions_amount = @return_transactions.collect { |return_transaction| return_transaction.amount.pennies }.sum
+      transactions_amount = @transactions
+        .collect { |transaction| transaction.amount.pennies }
+        .sum
+      return_transactions_amount = @return_transactions
+        .collect { |return_transaction| return_transaction.amount.pennies }
+        .sum
       total_amount = transactions_amount + return_transactions_amount
       CurrencyAmount.new(raw_pennies: total_amount)
     end
 
     def total_daily_cash_earned
-      daily_cash_earned = @transactions.collect { |transaction| transaction.daily_cash.amount.pennies }.sum
-      daily_cash_adjusted = @return_transactions.collect { |return_transaction| return_transaction.daily_cash_adjustment.amount.pennies }.sum
+      daily_cash_earned = @transactions
+        .collect { |transaction| transaction.daily_cash.amount.pennies }
+        .sum
+      daily_cash_adjusted = @return_transactions
+        .collect { |return_transaction| return_transaction.daily_cash_adjustment.amount.pennies }
+        .sum
       daily_cash_amount = daily_cash_earned - daily_cash_adjusted
       CurrencyAmount.new(raw_pennies: daily_cash_amount)
     end
@@ -93,7 +108,7 @@ module AppleCardStatementParser
     end
 
     def write_json!(filepath)
-      File.open(filepath, 'w') { |f| f.write(JSON.generate(as_json)) }
+      File.open(filepath, "w") { |f| f.write(JSON.generate(as_json)) }
     end
 
     def write_csv!(filepath)
@@ -136,8 +151,15 @@ module AppleCardStatementParser
       parsed_line = line.strip.split(THREE_OR_MORE_SPACE_REGEX)
       date, description, return_amount = parsed_line
       parsed_next_line = next_line.to_s.strip.split(THREE_OR_MORE_SPACE_REGEX)
-      indicator_string, daily_cash_percentage_adjustment, daily_cash_amount_adjustment = parsed_next_line
-      ReturnTransaction.new(date, description, return_amount, indicator_string, daily_cash_percentage_adjustment, daily_cash_amount_adjustment)
+      indicator, daily_cash_percentage_adjustment, daily_cash_amount_adjustment = parsed_next_line
+      ReturnTransaction.new(
+        date,
+        description,
+        return_amount,
+        indicator,
+        daily_cash_percentage_adjustment,
+        daily_cash_amount_adjustment
+      )
     end
   end
 end
