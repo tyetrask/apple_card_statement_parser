@@ -3,7 +3,7 @@ require "date"
 module AppleCardStatementParser
   module FormatValidators
     DATE_FORMAT = "%m/%d/%Y".freeze
-    VALID_PERCENTAGES = ["1%", "2%", "3%", "4%", "5%"].freeze
+    VALID_PERCENTAGES = ["1%", "2%", "3%", "-1%", "-2%", "-3%"].freeze
 
     private
 
@@ -31,7 +31,7 @@ module AppleCardStatementParser
     end
 
     def as_amount(value)
-      CurrencyAmount.new(value)
+      CurrencyAmount.new(raw_amount: value)
     end
 
     def is_an_amount?(value)

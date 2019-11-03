@@ -29,6 +29,7 @@ module AppleCardStatementParser
     def is_valid?
       is_a_date?(@raw_date) &&
         is_a_description?(@raw_description) &&
+        !@raw_description.include?(RETURN_STRING_MATCH) &&
         is_a_percent?(@raw_daily_cash_percentage) &&
         is_an_amount?(@raw_daily_cash_amount) &&
         is_an_amount?(@raw_amount)

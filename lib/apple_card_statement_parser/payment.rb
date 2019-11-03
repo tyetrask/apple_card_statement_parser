@@ -1,6 +1,5 @@
 module AppleCardStatementParser
   class Payment
-    RETURN_STRING_MATCH = "RETURN".freeze
     include FormatValidators
 
     def initialize(raw_date, raw_description, raw_amount)

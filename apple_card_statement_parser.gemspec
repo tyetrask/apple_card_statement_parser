@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tye Trask"]
   spec.email         = ["inc3pt@gmail.com"]
 
-  spec.summary       = %q{Scrape, parse, and convert Apple Card PDF statements into machine-readable formats}
+  spec.summary       = %q{Read, parse, and convert Apple Card PDF statements into machine-readable formats}
   spec.homepage      = "https://github.com/tyetrask/apple_card_statement_parser"
   spec.license       = "MIT"
 
@@ -28,4 +28,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "pry"
 end
