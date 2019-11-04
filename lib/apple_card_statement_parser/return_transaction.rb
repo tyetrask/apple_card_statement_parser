@@ -12,7 +12,7 @@ module AppleCardStatementParser
     end
 
     def id
-      "#{@date.strftime("%Y%m%d")}:#{TYPE}:#{@amount}"
+      "#{@date.strftime("%Y%m%d")}:#{TYPE}:#{@amount.amount}"
     end
   end
 end
