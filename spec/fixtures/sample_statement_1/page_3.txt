@@ -1,0 +1,98 @@
+                                                                                                                  Statement
+AppleCard Customer
+
+First Lasterson, apple_card_user@email-example.com                                                                Apr 1 — Apr 30, 2024
+
+
+
+
+
+Transactions
+
+
+
+  Date            Description                                                                       DailyCash                     Amount
+
+  04/06/2024      businessA90 9876543210 SE FAKE ST CITYTOWN 12345 USA                              2%   $0.18                     $9.20
+
+
+  04/06/2024      BUSINESSO2 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.17                    $16.86
+
+
+  04/06/2024      BUSINESSO3 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.16                     $7.89
+
+  04/07/2024      BUSINESSO4 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.31                    $31.19
+
+
+  04/07/2024      BUSINESSO5 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.05                     $4.99
+
+
+  04/07/2024      BUSINESSO6 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.39                    $39.06
+
+
+  04/08/2024      BUSINESSP1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.29                    $14.65
+
+
+  04/08/2024      BUSINESSP1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.53                    $26.50
+
+  04/08/2024      BUSINESSP1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.38                    $37.84
+
+
+  04/09/2024      BUSINESSP1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.09                     $4.45
+
+
+  04/09/2024      BUSINESSP1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.07                     $7.00
+
+
+  04/10/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                 2%   $2.38                   $119.02
+
+
+  04/10/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                 1%   $0.40                    $40.28
+
+
+  04/11/2024      BUSINESSP1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.09                     $4.45
+
+  04/12/2024      BUSINESSQ1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               3%   $22.47                  $749.00
+
+
+  04/12/2024      BUSINESSQ1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.17                     $8.42
+
+
+  04/12/2024      BUSINESSQ1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               1%   $0.60                    $59.99
+
+
+  04/13/2024      BUSINESSQ1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.19                     $9.70
+
+
+  04/13/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                 2%   $1.16                    $57.99
+
+  04/13/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                 2%   $0.14                     $6.87
+
+
+  04/13/2024      BUSINESSR1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $2.00                    $99.99
+
+
+  04/13/2024      BUSINESSR1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.20                     $9.98
+
+
+  04/14/2024      BUSINESSR1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.12                     $5.75
+
+
+  04/14/2024      BUSINESSR1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               2%   $0.40                    $19.99
+
+  04/15/2024      BUSINESSR1 2222222222 SW FAKE CT TOWNCITY 12345 USA                               3%   $0.45                    $14.99
+
+
+  04/15/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                 2%   $0.72                    $36.00
+
+
+  04/15/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                 2%   $0.35                    $17.47
+
+
+
+
+
+Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch, Lockbox 6112, P.O. Box 7247, Philadelphia, PA 19170-6112.
+
+
+Page 3 /6
