@@ -8,6 +8,12 @@ module AppleCardStatementParser
         @statement = statement
       end
 
+      def write(filepath)
+        File.open(filepath, "w") { |f| f.write(::JSON.generate(as_json)) }
+      end
+
+      private
+
       def as_json
         data = {transactions: []}
         @statement.payments.each do |payment|
@@ -38,10 +44,6 @@ module AppleCardStatementParser
           }
         end
         data
-      end
-
-      def write(filepath)
-        File.open(filepath, "w") { |f| f.write(::JSON.generate(as_json)) }
       end
     end
   end

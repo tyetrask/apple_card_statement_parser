@@ -1,0 +1,98 @@
+                                                                                                                    Statement
+AppleCard Customer
+
+First Lasterson, apple_card_user@email-example.com                                                                  Apr 1 — Apr 30, 2024
+
+
+
+
+
+Transactions
+
+
+
+   Date           Description                                                                         DailyCash                     Amount
+
+  04/26/2024      BUSINESSE1 9876543210 SE FAKE ST CITYTOWN 12345 USA                                 1%   $0.08                     $8.00
+
+
+  04/27/2024      BUSINESSD1 9876543210 SE FAKE ST CITYTOWN 12345 USA                                 1%   $0.43                    $42.61
+
+
+  04/27/2024      BUSINESSD1 9876543210 SE FAKE ST CITYTOWN 12345 USA                                 2%   $0.10                     $4.95
+
+  04/27/2024      BUSINESSD1 9876543210 SE FAKE ST CITYTOWN 12345 USA                                 1%   $0.14                    $13.95
+
+
+  04/27/2024      BUSINESSC1 1234567890 SE FAKE ST CITYTOWN 12345 USA                                 1%   $0.34                    $34.27
+
+
+  04/28/2024      BUSINESSB1 1234567890 SE FAKE ST CITYTOWN 12345 USA                                 1%   $0.29                    $29.02
+
+
+  04/28/2024      BUSINESSB1 1234567890 SE FAKE ST CITYTOWN 12345 USA                                 1%   $0.24                    $23.56
+
+
+  04/29/2024      BUSINESSE1 RETURNEDTHIS SE FAKE ST CITYTOWN 12345 USA (RETURN)                                                  -$349.99
+                  Daily Cash Adjustment                                                               -2%                             $7.00
+
+
+  04/30/2024      BUSINESSA1 1234567890 SE FAKE ST CITYTOWN 12345 USA                                 1%   $1.12                    $111.85
+
+
+  04/30/2024      BUSINESSA1 1234567890 SE FAKE ST CITYTOWN 12345 USA                                 2%   $0.19                     $9.48
+
+  Total charges, credits and returns
+                                                                                                                                 $3,586.77
+
+  Total Daily Cash earned this month                                                                       $66.86
+
+  Daily Cash rewards are automatically transferred to your Apple Cash account. If you do not have one, check to see your accumulated rewards balance on your phone and open an account today.
+
+
+
+
+
+
+Interest Charged
+
+
+
+   —                                                                                                                                  $0.00
+
+
+  Total interest for this month                                                                                                      $0.00
+
+
+  Interest Charges                                                    Interest Charge Calculation
+  2024 Total Year-to-Date:                                            Annual Percentage Rate (APR)       12.34 %(variable)
+
+  – Total interest charged in 2024   $0.00                            Balance subject to interest rate   $0.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch, Lockbox 6112, P.O. Box 7247, Philadelphia, PA 19170-6112.
+
+
+Page 5 /6

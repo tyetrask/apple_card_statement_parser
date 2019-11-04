@@ -1,0 +1,99 @@
+                                                                                                                       Statement
+
+AppleCard Customer
+First Lasterson, apple_card_user@email-example.com                                                                     Apr 1 — Apr 30, 2024
+
+
+
+
+
+Payments
+
+
+
+   Date            Description                                                                                                         Amount
+
+  04/03/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$208.96
+
+
+  04/05/2024      ACH Deposit Internet transfer from account ending in 7778                                                            -$48.03
+
+
+  04/10/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$208.17
+
+
+  04/13/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$243.61
+
+
+  04/16/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$750.00
+
+  04/17/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$190.00
+
+
+  04/20/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$175.00
+
+
+  04/23/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$130.00
+
+
+  04/23/2024      Apple Cash payment                                                                                                   -$55.00
+
+
+  04/23/2024      ACH Deposit Internet transfer from account ending in 7778                                                           -$290.44
+
+  04/24/2024      ACH Deposit Internet transfer from account ending in 7778                                                            -$11.99
+
+
+  04/30/2024      ACH Deposit Internet transfer from account ending in 7778                                                            -$15.99
+
+
+  04/30/2024      Apple Cash payment                                                                                                   -$60.00
+
+
+  Totalpayments for this month                                                                                                       -$2,387.19
+
+
+
+
+
+Transactions
+
+
+
+   Date            Description                                                                          DailyCash                       Amount
+
+
+  04/01/2024      SVC*SERVICE 44556677 50005 E SOMEWHERE BLVD SVC.COM/BILL12345 USA                     2%    $0.12                      $5.99
+
+  04/01/2024      BUSINESST7 4044044044 SW FAKE CT TOWNCITY 77777 USA                                   1%    $0.24                     $23.99
+
+
+  04/01/2024      BUSINESST7 4044044044 SW FAKE CT TOWNCITY 77777 USA                                   1%    $1.08                    $108.38
+
+
+  04/01/2024      BUSINESST7 4044044044 SW FAKE CT TOWNCITY 77777 USA                                   1%    $0.71                     $70.60
+
+
+  04/02/2024      BUSINESSV3 3033033033 SW FAKE CT TOWNCITY 77777 USA                                   1%    $0.03                      $2.50
+
+
+  04/02/2024      BUSINESSV3 4044044044 SW FAKE CT TOWNCITY 77777 USA                                   1%    $0.04                      $3.75
+
+
+  04/04/2024      BUSINESSV3 3033033033 SW FAKE CT TOWNCITY 77777 USA                                   2%    $0.09                      $4.45
+
+  04/04/2024      BUSINESSV3 3033033033 SW FAKE CT TOWNCITY 77777 USA                                   3%    $0.87                     $29.00
+
+
+  04/05/2024      BUSINESSZ8 3033033033 SW FAKE CT TOWNCITY 77777 USA                                   2%    $0.17                      $8.33
+
+
+  04/05/2024      BUSINESSZ8 3033033033 SW FAKE CT TOWNCITY 77777 USA                                   1%    $0.20                     $19.99
+
+
+
+
+Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch, Lockbox 6112, P.O. Box 7247, Philadelphia, PA 19170-6112.
+
+
+Page 2 /6

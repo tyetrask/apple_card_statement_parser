@@ -10,6 +10,12 @@ module AppleCardStatementParser
         @statement = statement
       end
 
+      def write(filepath)
+        ::CSV.open(filepath, "wb") { |csv| as_csv.each { |row| csv << row } }
+      end
+
+      private
+
       def as_csv
         data = [HEADER]
         @statement.payments.each do |payment|
@@ -24,9 +30,6 @@ module AppleCardStatementParser
         data
       end
 
-      def write(filepath)
-        ::CSV.open(filepath, "wb") { |csv| as_csv.each { |row| csv << row } }
-      end
     end
   end
 end

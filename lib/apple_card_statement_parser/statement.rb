@@ -8,13 +8,7 @@ module AppleCardStatementParser
     VERSION_1 = "1".freeze
     VALID_VERSIONS = [VERSION_1].freeze
 
-    attr_reader :file_hash,
-                :filepath,
-                :filename,
-                :payments,
-                :period,
-                :transactions,
-                :return_transactions
+    attr_reader :file_hash, :period, :payments, :transactions, :return_transactions
 
     def self.read(filepath, statement_version = VERSION_AUTODETECT)
       raise "File does not exist: #{filepath}" unless File.exist?(filepath)
@@ -30,10 +24,8 @@ module AppleCardStatementParser
 
     def initialize(filepath, period, payments, transactions, return_transactions)
       @filepath = filepath
-      @filename = File.basename(@filepath, ".*")
       raise "File does not exist: #{@filepath}" unless File.exist?(@filepath)
       @file_hash = Digest::MD5.hexdigest(File.read(@filepath))
-
       @period = period
       @payments = payments
       @transactions = transactions

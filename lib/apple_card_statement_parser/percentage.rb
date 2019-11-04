@@ -9,6 +9,8 @@ module AppleCardStatementParser
       new(amount)
     end
 
+    attr_reader :amount
+
     def initialize(amount)
       @amount = amount
     end
@@ -18,7 +20,7 @@ module AppleCardStatementParser
     end
 
     def to_s
-      "#{is_negative? ? "-" : ""}#{@amount}%"
+      "#{@amount}%"
     end
   end
 end
