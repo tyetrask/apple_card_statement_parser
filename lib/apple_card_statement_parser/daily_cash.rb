@@ -1,18 +1,10 @@
 module AppleCardStatementParser
   class DailyCash
-    include FormatValidators
+    attr_reader :amount, :percentage
 
-    def initialize(raw_amount, raw_percentage)
-      @raw_amount = raw_amount
-      @raw_percentage = raw_percentage
-    end
-
-    def percentage
-      DailyCashPercentage.new(@raw_percentage)
-    end
-
-    def amount
-      as_amount(@raw_amount)
+    def initialize(amount, percentage)
+      @amount = amount
+      @percentage = percentage
     end
   end
 end

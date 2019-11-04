@@ -6,6 +6,6 @@ require "apple_card_statement_parser"
 input_filepath = ARGV[0]
 statement = AppleCardStatementParser::Statement.read(input_filepath)
 
-exporter = AppleCardStatementParser::Export::JSON.new(statement)
-output_filepath = input_filepath.gsub(".pdf", ".json")
+exporter = AppleCardStatementParser::Export::CSV.new(statement)
+output_filepath = input_filepath.gsub(".pdf", ".csv")
 exporter.write(output_filepath)

@@ -1,6 +1,6 @@
 # Apple Card Statement Parser
 
-⚠️ This library is a work-in-progress! Please see open [issues](https://github.com/tyetrask/apple_card_statement_parser/issues) to learn what hasn't been completed yet.
+⚠️ This library is a work-in-progress and **not yet complete**! Please see open [issues](https://github.com/tyetrask/apple_card_statement_parser/issues) to learn what hasn't been completed yet.
 
 A Ruby Gem to read, parse, and convert Apple Card PDF statements into machine-readable formats.
 
@@ -30,23 +30,26 @@ $ gem install apple_card_statement_parser
 
 Create an instance of `Statement` and `read!`:
 ```ruby
-@statement = AppleCardStatementParser::Statement.new("tmp/Apple Card Statement - August 2024.pdf").read!
+@statement = AppleCardStatementParser::Statement.read("tmp/Apple Card Statement - August 2024.pdf")
+#=> #<AppleCardStatementParser::Statement ...>
 ```
 
 Then access properties of interest for the statement:
 ```ruby
 puts @statement.period
-#=> TODO
+#=> #<Date: 2024-08-01 ((2458728j,0s,0n),+0s,2299161j)>..#<Date: 2024-08-30 ((2458757j,0s,0n),+0s,2299161j)>
+puts @statement.payments
+#=> [...]
 puts @statement.transactions
+#=> [...]
+puts @statement.return_transactions
 #=> [...]
 ```
 
 Or output as JSON for import into your preferred finance software:
 ```ruby
-@statement.as_json
-#=> {...}
-@statement.write_json!("tmp/apple_card_statement.json")
-#=> true
+@exporter = AppleCardStatementParser::Export::JSON.new(@statement)
+@exporter.write("tmp/apple_card_statement.json")
 ```
 
 ```json
@@ -55,11 +58,11 @@ Or output as JSON for import into your preferred finance software:
 }
 ```
 
-#### CLI
+#### Command Line
 
 You can also use the binary to convert PDFs directly to JSON:
 ```sh
-bin/apple_card_statement_to_json "tmp/Apple Card Statement - August 2024.pdf"
+bin/apple_card_statement_to_csv "tmp/Apple Card Statement - August 2024.pdf"
 ```
 
 ## Development

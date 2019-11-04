@@ -7,7 +7,6 @@ Gem::Specification.new do |spec|
   spec.name          = "apple_card_statement_parser"
   spec.version       = AppleCardStatementParser::VERSION
   spec.authors       = ["Tye Trask"]
-  spec.email         = ["inc3pt@gmail.com"]
 
   spec.summary       = %q{Read, parse, and convert Apple Card PDF statements into machine-readable formats}
   spec.homepage      = "https://github.com/tyetrask/apple_card_statement_parser"
