@@ -28,7 +28,7 @@ $ gem install apple_card_statement_parser
 
 ## Usage
 
-Create an instance of `Statement` and `read!`:
+Create an instance of `Statement`:
 ```ruby
 @statement = AppleCardStatementParser::Statement.read("tmp/Apple Card Statement - August 2024.pdf")
 #=> #<AppleCardStatementParser::Statement ...>
@@ -44,9 +44,17 @@ puts @statement.transactions
 #=> [...]
 puts @statement.return_transactions
 #=> [...]
+puts @statement.total_payments.to_s
+#=> -$765.43
+puts @statement.total_charges_credits_and_returns.to_s
+#=> $1234.56
+puts @statement.total_daily_cash_earned.to_s
+#=> $23.45
 ```
 
-Or output as JSON for import into your preferred finance software:
+### Export
+
+Export as JSON for import into your preferred finance software:
 ```ruby
 @exporter = AppleCardStatementParser::Export::JSON.new(@statement)
 @exporter.write("tmp/apple_card_statement.json")
@@ -54,15 +62,45 @@ Or output as JSON for import into your preferred finance software:
 
 ```json
 {
-    # TODO JSON formatted example here
+    "transactions": [
+        {
+            "id":"20240803:PAYMENT:-19996",
+            "date":"2024-08-03",
+            "type":"PAYMENT",
+            "amount":"-$199.96",
+            "description":"ACH Deposit Internet transfer from account ending in 1234"
+        },
+        {
+            "id":"20240809:PAYMENT:445",
+            "date":"2024-08-09",
+            "type":"TRANSACTION",
+            "amount":"-$4.45",
+            "description":"STARBUCKS STORE MANHATTAN NY USA"
+        }
+    ]
 }
+```
+
+Or CSV:
+```ruby
+@exporter = AppleCardStatementParser::Export::CSV.new(@statement)
+@exporter.write("tmp/apple_card_statement.csv")
+```
+
+```csv
+date,type,amount,description,id
+2024-08-03,PAYMENT,-$199.96,ACH Deposit Internet transfer from account ending in 1234,20240803:PAYMENT:-19996
+2024-08-09,TRANSACTION,$4.45,STARBUCKS STORE MANHATTAN NY USA,20240809:TRANSACTION:445
 ```
 
 #### Command Line
 
-You can also use the binary to convert PDFs directly to JSON:
+You can also use the binary to convert PDFs directly to JSON or CSV:
 ```sh
+bin/apple_card_statement_to_json "tmp/Apple Card Statement - August 2024.pdf"
+# Creates tmp/Apple Card Statement - August 2024.json
 bin/apple_card_statement_to_csv "tmp/Apple Card Statement - August 2024.pdf"
+# Creates tmp/Apple Card Statement - August 2024.csv
 ```
 
 ## Development
