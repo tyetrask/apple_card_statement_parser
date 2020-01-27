@@ -1,6 +1,8 @@
-# Apple Card Statement Parser
+🛑 **This library is deprecated.** Apple now offers this functionality directly in the Wallet app. 🎊
 
-⚠️ This library is a work-in-progress and **not yet complete**! Please see open [issues](https://github.com/tyetrask/apple_card_statement_parser/issues) to learn what hasn't been completed yet.
+~~This library is a work-in-progress and **not yet complete**! Please see open [issues](https://github.com/tyetrask/apple_card_statement_parser/issues) to learn what hasn't been completed yet.~~
+
+# Apple Card Statement Parser
 
 A Ruby Gem to read, parse, and convert Apple Card PDF statements into machine-readable formats.
 
